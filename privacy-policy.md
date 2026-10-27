@@ -1,6 +1,6 @@
 # Notes privacy policy
 
-**Last updated: 19 October 2026**
+**Last updated: 27 October 2026**
 
 Notes is a general-purpose notepad published by the developer at
 **klixup@gmail.com**. The app does not require an account.
@@ -17,6 +17,21 @@ in Android settings.
 The microphone is used only when you choose to record a voice note. Recordings
 are stored on your device and are not included in JSON backups. You can delete
 recordings from the note or Attachments screen.
+
+## Optional AI transcription and cleanup
+
+If you choose **Transcribe** for a recording, Notes sends that recording to its
+Cloudflare-hosted gateway and Groq's inference API to create a transcript and
+correct its grammar. The resulting text is added to the open note and saved on
+your device. Notes does not send recordings or note text for AI processing
+without that action. The gateway does not save the audio or transcript. Groq
+states that inference customer data is not retained by default, but may
+temporarily retain inputs and outputs for reliability or abuse investigations
+for up to 30 days unless Zero Data Retention is enabled for the API account.
+Cloudflare processes request metadata, including network information, to
+operate and protect the gateway. Do not submit sensitive information unless you
+are comfortable with this processing. AI transcription and cleanup may be
+inaccurate; review the result before relying on it.
 
 ## Advertising and consent
 
@@ -51,7 +66,8 @@ You can delete notes and recordings in Notes. Deleted notes remain in Recently
 Deleted for up to 30 days, where you can restore them or permanently remove
 them. You can clear all local Notes data through Android settings. Google
 handles advertising data according to its policies; Google Play handles
-purchase records.
+purchase records. Groq and Cloudflare process data described in the optional AI
+section above according to their own terms and privacy practices.
 
 ## Children
 
